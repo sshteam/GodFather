@@ -22,35 +22,24 @@ namespace KingCulator
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button_Click(object sender, EventArgs e)
         {
             double firstValue = Convert.ToDouble(textBox1.Text);
             double secondValue = Convert.ToDouble(textBox2.Text);
-            double answer = firstValue + secondValue;
-            textBox3.Text = Convert.ToString(answer);
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            double firstValue = Convert.ToDouble(textBox1.Text);
-            double secondValue = Convert.ToDouble(textBox2.Text);
-            double answer = firstValue - secondValue;
-            textBox3.Text = Convert.ToString(answer);
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            double firstValue = Convert.ToDouble(textBox1.Text);
-            double secondValue = Convert.ToDouble(textBox2.Text);
-            double answer = firstValue * secondValue;
-            textBox3.Text = Convert.ToString(answer);
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            double firstValue = Convert.ToDouble(textBox1.Text);
-            double secondValue = Convert.ToDouble(textBox2.Text);
-            double answer = firstValue / secondValue;
+            double answer;
+            switch (((Button)sender).Name)
+            {
+                case "summa": answer = firstValue + secondValue;
+                    break;
+                case "minus": answer = firstValue - secondValue;
+                    break;
+                case "umnozenie": answer = firstValue * secondValue;
+                    break;
+                case "delenie": answer = firstValue / secondValue;
+                    break;
+                default:
+                    throw new Exception("Неизвестная опереация");
+            }
             textBox3.Text = Convert.ToString(answer);
         }
     }
