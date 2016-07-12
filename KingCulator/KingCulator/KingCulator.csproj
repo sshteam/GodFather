@@ -44,8 +44,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OneArgument\Arccos.cs" />
+    <Compile Include="OneArgument\Arcsin.cs" />
+    <Compile Include="OneArgument\Exp.cs" />
+    <Compile Include="OneArgument\Fac.cs" />
+    <Compile Include="OneArgument\Ln.cs" />
+    <Compile Include="OneArgument\Sqrt.cs" />
+    <Compile Include="TwoArgument\Log.cs" />
     <Compile Include="OneArgument\ArcTangens.cs" />
     <Compile Include="OneArgument\Cosinus.cs" />
+    <Compile Include="TwoArgument\Power.cs" />
     <Compile Include="TwoArgument\Delenie.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

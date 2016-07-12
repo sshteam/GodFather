@@ -12,6 +12,8 @@ namespace KingCulator.TwoArgument
                case "minus": return new Minus();
                case "umnozenie": return new Umnozenie();
                case "delenie": return new Delenie();
+               case "power": return new Power();
+               case "log": return new Log();
                default:
                    throw new Exception("Неизвестная опереация");
            }
