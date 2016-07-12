@@ -1,6 +1,6 @@
 ﻿namespace KingCulator.TwoArgument
 {
-    class Minus:ITwoArgumentCalculater
+    public class Minus:ITwoArgumentCalculater
     {
         public double Calculate(double firstValue, double secondValue)
         {
