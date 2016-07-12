@@ -2,7 +2,7 @@
 
 namespace KingCulator.OneArgument
 {
-    class Arccos : IOneArgumentCalculater
+    public class Arccos : IOneArgumentCalculater
     {
         public double Calculate(double oneValue)
         {

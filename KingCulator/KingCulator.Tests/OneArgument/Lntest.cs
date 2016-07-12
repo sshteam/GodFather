@@ -4,17 +4,17 @@ using NUnit.Framework;
 namespace KingCulator.Tests.OneArgument
 {
     [TestFixture]
-    class SinusTest
+    class Lntest
     {
-        [TestCase(0, 0)]
-        [TestCase(4, -0.756)]
-        [TestCase(10, -0.544)]
+        [TestCase(1, 0)]
+        [TestCase(100,2)]
+        [TestCase(1000, 3)]
         public void CalculateTest(double oneValue, double expected)
         {
 
-            IOneArgumentCalculater calculater = new Sinus();
+            IOneArgumentCalculater calculater = new Ln();
             double result = calculater.Calculate(oneValue);
-            Assert.AreEqual(expected, result, 0.001);
+            Assert.AreEqual(expected, result);
         }
     }
 }

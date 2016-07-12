@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using KingCulator.OneArgument;
+﻿using KingCulator.OneArgument;
 using NUnit.Framework;
 
 namespace KingCulator.Tests.OneArgument

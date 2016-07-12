@@ -4,18 +4,18 @@ using NUnit.Framework;
 namespace KingCulator.Tests.TwoArgument
 {
     [TestFixture]
-    public class LogTests
+    class PowerTest
     {
-        [TestCase(4, 2, 2)]
-        [TestCase(9, 3, 2)]
-        [TestCase(25, 5, 2)]
+        [TestCase(4, 2, 16)]
+        [TestCase(3, 2, 9)]
+        [TestCase(5, 3, 125)]
         public void CalculateTest(double firstValue, double secondValue, double expected)
         {
 
-            ITwoArgumentCalculater calculater = new Log();
+            ITwoArgumentCalculater calculater = new Power();
             double result = calculater.Calculate(firstValue, secondValue);
             Assert.AreEqual(expected, result);
         }
-
     }
+
 }

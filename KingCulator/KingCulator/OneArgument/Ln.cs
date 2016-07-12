@@ -2,7 +2,7 @@
 
 namespace KingCulator.OneArgument
 {
-    class Ln : IOneArgumentCalculater
+    public class Ln : IOneArgumentCalculater
     {
         public double Calculate(double oneValue)
         {

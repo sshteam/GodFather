@@ -2,7 +2,7 @@
 
 namespace KingCulator.TwoArgument
 {
-    class Power:ITwoArgumentCalculater
+    public class Power:ITwoArgumentCalculater
     {
         public double Calculate(double firstValue, double secondValue)
         {

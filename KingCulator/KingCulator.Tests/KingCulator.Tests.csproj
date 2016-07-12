@@ -43,6 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OneArgument\ArccosTests.cs" />
+    <Compile Include="OneArgument\CosinusTests.cs" />
+    <Compile Include="OneArgument\Lntest.cs" />
     <Compile Include="OneArgument\SinusTest.cs" />
     <Compile Include="OneArgument\FacTest.cs" />
     <Compile Include="OneArgument\SqrtTest.cs" />
@@ -50,6 +53,7 @@
     <Compile Include="TwoArgument\DelenieTests.cs" />
     <Compile Include="TwoArgument\LogTest.cs" />
     <Compile Include="TwoArgument\MinusTests.cs" />
+    <Compile Include="TwoArgument\PowerTest.cs" />
     <Compile Include="TwoArgument\SummaTests.cs" />
     <Compile Include="TwoArgument\UmnozenieTests.cs" />
   </ItemGroup>
