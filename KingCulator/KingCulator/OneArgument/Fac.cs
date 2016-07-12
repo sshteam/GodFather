@@ -1,6 +1,6 @@
 ﻿namespace KingCulator.OneArgument
 {
-    class Fac : IOneArgumentCalculater
+    public class Fac : IOneArgumentCalculater
     {
         public double Calculate(double oneValue)
         {

@@ -2,7 +2,7 @@
 
 namespace KingCulator.OneArgument
 {
-    class Sinus : IOneArgumentCalculater    {
+    public class Sinus : IOneArgumentCalculater    {
         public double Calculate(double oneValue)
         {
             return Math.Sin(oneValue);

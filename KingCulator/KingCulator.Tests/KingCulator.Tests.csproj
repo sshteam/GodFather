@@ -43,8 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OneArgument\SinusTest.cs" />
+    <Compile Include="OneArgument\FacTest.cs" />
+    <Compile Include="OneArgument\SqrtTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TwoArgument\DelenieTests.cs" />
+    <Compile Include="TwoArgument\LogTest.cs" />
     <Compile Include="TwoArgument\MinusTests.cs" />
     <Compile Include="TwoArgument\SummaTests.cs" />
     <Compile Include="TwoArgument\UmnozenieTests.cs" />
@@ -58,9 +62,7 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="OneArgument\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
