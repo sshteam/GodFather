@@ -44,12 +44,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Sort\Choose.cs" />
     <Compile Include="OneArgument\Arccos.cs" />
     <Compile Include="OneArgument\Arcsin.cs" />
     <Compile Include="OneArgument\Exp.cs" />
     <Compile Include="OneArgument\Fac.cs" />
     <Compile Include="OneArgument\Ln.cs" />
     <Compile Include="OneArgument\Sqrt.cs" />
+    <Compile Include="Sort\QuickSort.cs" />
+    <Compile Include="Sort\ISorter.cs" />
+    <Compile Include="Sort\SortFactory.cs" />
     <Compile Include="TwoArgument\Log.cs" />
     <Compile Include="OneArgument\ArcTangens.cs" />
     <Compile Include="OneArgument\Cosinus.cs" />

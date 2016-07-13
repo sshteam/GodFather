@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DivisionByZeroTest.cs" />
     <Compile Include="FactoryTest.cs" />
     <Compile Include="OneArgument\ArccosTests.cs" />
     <Compile Include="OneArgument\CosinusTests.cs" />

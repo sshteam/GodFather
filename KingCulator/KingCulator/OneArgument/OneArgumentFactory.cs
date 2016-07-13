@@ -4,6 +4,11 @@ namespace KingCulator.OneArgument
 {
      public static class OneArgumentFactory
     {
+         /// <summary>
+         /// to count fuctions with one argument
+         /// </summary>
+         /// <param name="calculatorName">name of calculator</param>
+         /// <returns>return value of the function</returns>
          public static IOneArgumentCalculater CreateCalculater(string calculatorName)
          {
              switch (calculatorName)

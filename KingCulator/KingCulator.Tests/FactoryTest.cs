@@ -8,6 +8,9 @@ namespace KingCulator.Tests
     class FactoryTest
     {
         [TestCase("summa", typeof(Summa))]
+        [TestCase("minus", typeof(Minus))]
+        [TestCase("umnozenie", typeof(Umnozenie))]
+        [TestCase("delenie", typeof(Delenie))]
 
         public void CalculateTest(string name, Type type)
         {

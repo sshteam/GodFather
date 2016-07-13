@@ -50,6 +50,9 @@
             this.arcsin = new System.Windows.Forms.Button();
             this.factorial = new System.Windows.Forms.Button();
             this.exp = new System.Windows.Forms.Button();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.sort1 = new System.Windows.Forms.Button();
+            this.sort2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // summa
@@ -260,11 +263,41 @@
             this.exp.UseVisualStyleBackColor = true;
             this.exp.Click += new System.EventHandler(this.OneArgumentButtonClick);
             // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(149, 245);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(318, 20);
+            this.textBox4.TabIndex = 22;
+            // 
+            // sort1
+            // 
+            this.sort1.Location = new System.Drawing.Point(149, 271);
+            this.sort1.Name = "sort1";
+            this.sort1.Size = new System.Drawing.Size(110, 23);
+            this.sort1.TabIndex = 23;
+            this.sort1.Text = "Сортировщик 1";
+            this.sort1.UseVisualStyleBackColor = true;
+            this.sort1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // sort2
+            // 
+            this.sort2.Location = new System.Drawing.Point(365, 271);
+            this.sort2.Name = "sort2";
+            this.sort2.Size = new System.Drawing.Size(102, 23);
+            this.sort2.TabIndex = 24;
+            this.sort2.Text = "Сортировщик 2";
+            this.sort2.UseVisualStyleBackColor = true;
+            this.sort2.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(766, 446);
+            this.Controls.Add(this.sort2);
+            this.Controls.Add(this.sort1);
+            this.Controls.Add(this.textBox4);
             this.Controls.Add(this.exp);
             this.Controls.Add(this.factorial);
             this.Controls.Add(this.arcsin);
@@ -289,7 +322,6 @@
             this.Controls.Add(this.summa);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -319,6 +351,9 @@
         private System.Windows.Forms.Button arcsin;
         private System.Windows.Forms.Button factorial;
         private System.Windows.Forms.Button exp;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Button sort1;
+        private System.Windows.Forms.Button sort2;
     }
 }
 
