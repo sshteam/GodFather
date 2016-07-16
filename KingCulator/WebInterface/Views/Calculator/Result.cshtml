@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "result";
+}
+
+<h2>@ViewBag.Title</h2>
+<p>
+    First argument: @ViewBag.firstArgument
+    <br/>
+    Second argument: @ViewBag.secondArgument
+    <br />
+    Operation: @(((SelectListItem[]) ViewBag.Operations).Single(o => o.Value == @ViewBag.operation).Text)
+    <br />
+    Result: @ViewBag.Answer
+</p>

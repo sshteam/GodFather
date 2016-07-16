@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "title";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<form action="Index" method="post" enctype="application/x-www-form-urlencoded">
+    <input type="number" value="0" name="firstValue" />
+    <br />
+    <input type="number" value="0" name="secondValue" />
+    <br />
+    @for (var i = 0; i < ViewBag.Operations.Length; i++)
+    {
+
+        <input type="radio" id='@("operation" + i)' value="@ViewBag.Operations[i].Value" name="operation" checked="@ViewBag.Operations[i].Selected" />
+        <label for='@("operation" + i)'>@ViewBag.Operations[i].Text</label>
+        <br />
+    }
+    <input type="submit" value="Вычислить" />
+</form>
